@@ -22,3 +22,5 @@ const chef = {
 const secondChef = { ...chef, makeBurger: chef.makeBurger };
 console.log('chef', chef);
 console.log('secondChef', secondChef);
+
+// Per clonare l'oggetto restaurant l'unico metodo utilizzabile è structuredClone(), quest'ultimo è in grado di effettuare una copia profonda e soprattutto può copiare ogetti complessi come in questo caso le date.
