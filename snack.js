@@ -8,3 +8,17 @@
 
 // SNACK 3
 // In questo caso sono stati creati tre oggetti in memoria, il metodo utilizzato effettua una copia indipendete dell'oggetto.
+
+// SNACK 4
+// L'oggetto chef comprende una funzione, nessuno dei metodi che abbiamo visto permette di crearne una clone, dobbiamo dunque forzare la copie col seguente modo:
+const chef = {
+    name: "Chef Hyur",
+    age: 29,
+    makeBurger: (num = 1) => {
+        console.log(`Ecco ${num} hamburger per te!`);
+    },
+}
+
+const secondChef = { ...chef, makeBurger: chef.makeBurger };
+console.log('chef', chef);
+console.log('secondChef', secondChef);
