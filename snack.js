@@ -31,3 +31,6 @@
 // Nel terzo console.log, il risultato sarà "Hyur's II".
 // Nel quarto console.log, il risultato sarà "Hyur's II".
 // In memoria sono stati creati due oggetti con copia solo del primo livello delle proprietà dell'oggetto.
+
+// SNACK 6
+// Il metodo migliore è l'utilizzo di structuredClone(), che ci garantische una copia profonda dell'oggetto, va implementato però l'utilizzo dello spread operator per copiare le funzioni(solo come riferimento e non come copia vera e propria).
