@@ -24,3 +24,9 @@ console.log('chef', chef);
 console.log('secondChef', secondChef);
 
 // Per clonare l'oggetto restaurant l'unico metodo utilizzabile è structuredClone(), quest'ultimo è in grado di effettuare una copia profonda e soprattutto può copiare ogetti complessi come in questo caso le date.
+
+// SNACK 5
+// Nel primo console.log, il risultato sarà "Chef Hyur".
+// Nel secondo console.log, il risultato sarà "Chef Hyur".
+// Nel terzo console.log, il risultato sarà "Hyur's II".
+// Nel quarto console.log, il risultato sarà "Hyur's II".
