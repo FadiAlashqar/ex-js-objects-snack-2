@@ -11,17 +11,17 @@
 
 // SNACK 4
 // L'oggetto chef comprende una funzione, nessuno dei metodi che abbiamo visto permette di crearne una clone, dobbiamo dunque forzare la copie col seguente modo:
-const chef = {
-    name: "Chef Hyur",
-    age: 29,
-    makeBurger: (num = 1) => {
-        console.log(`Ecco ${num} hamburger per te!`);
-    },
-}
+// const chef = {
+//     name: "Chef Hyur",
+//     age: 29,
+//     makeBurger: (num = 1) => {
+//         console.log(`Ecco ${num} hamburger per te!`);
+//     },
+// }
 
-const secondChef = { ...chef, makeBurger: chef.makeBurger };
-console.log('chef', chef);
-console.log('secondChef', secondChef);
+// const secondChef = { ...chef, makeBurger: chef.makeBurger };
+// console.log('chef', chef);
+// console.log('secondChef', secondChef);
 
 // Per clonare l'oggetto restaurant l'unico metodo utilizzabile è structuredClone(), quest'ultimo è in grado di effettuare una copia profonda e soprattutto può copiare ogetti complessi come in questo caso le date.
 
@@ -30,3 +30,4 @@ console.log('secondChef', secondChef);
 // Nel secondo console.log, il risultato sarà "Chef Hyur".
 // Nel terzo console.log, il risultato sarà "Hyur's II".
 // Nel quarto console.log, il risultato sarà "Hyur's II".
+// In memoria sono stati creati due oggetti con copia solo del primo livello delle proprietà dell'oggetto.
